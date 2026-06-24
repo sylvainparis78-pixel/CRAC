@@ -213,7 +213,7 @@ h1 {
     <div id="startScreen" class="card">
         <h1>Entraînement à la méthode C.R.A.C.</h1>
         <div style="text-align: center;">
-            <p>Maîtrisez les 4 étapes fondamentales : <strong>Creuser</strong>, <strong>Reconnaître</strong>, <strong>Anticiper</strong> et <strong>Contrôler</strong> face aux situations critiques du chantier.</p>
+            <p>Maîtrisez les 4 étapes fondamentales : <strong>Creuser</strong>, <strong>Reformuler</strong>, <strong>Anticiper</strong> et <strong>Contrôler</strong> face aux situations critiques du chantier.</p>
             <button class="start-btn" onclick="startQuiz()">Démarrer le module</button>
         </div>
     </div>
@@ -251,7 +251,7 @@ h1 {
 <script>
 const baseSituations = [
     {
-        title: "Fiche 1 : Refus du port des EPI (Sécurité)",
+        title: "Refus du port des EPI (Sécurité)",
         context: "Un chef d'équipe remarque qu'un électricien senior ne porte pas ses lunettes de protection lors d'un perçage au plafond.",
         objection: "« Ça fait 20 ans que je fais ça, je sais ce que je fais. En plus, avec la poussière et la sueur, j'ai de la buée, je n'y vois rien. »",
         steps: [
@@ -263,7 +263,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "R", name: "Reconnaître", color: "var(--step-r)",
+                code: "R", name: "Reformuler", color: "var(--step-r)",
                 options: [
                     { text: "« Je comprends tout à fait que bosser avec de la buée soit super inconfortable et que tu aies besoin d'une visibilité parfaite pour tes repères. »", isCorrect: true, reply: "« Bah oui, si c'est pour percer à côté ou me blesser parce que je n'y vois rien, ce n'est pas mieux. »" },
                     { text: "« Oui enfin bon, le modèle est homologué par la direction, tout le monde fait avec. »", isCorrect: false, feedback: "Cette réponse minimise sa contrainte réelle. Pour maintenir la confiance, il faut valider son besoin de confort visuel sans pour autant valider l'infraction." }
@@ -286,7 +286,7 @@ const baseSituations = [
         ]
     },
     {
-        title: "Fiche 2 : Retard de livraison d'un fournisseur",
+        title: "Retard de livraison d'un fournisseur",
         context: "Le fournisseur de chemins de câbles appelle le conducteur de travaux pour annoncer 48 heures de retard sur la livraison principale.",
         objection: "« Mon transporteur habituel a eu un problème de camion. Je ne peux rien faire, c'est un cas de force majeure, il faudra décaler la pose. »",
         steps: [
@@ -298,7 +298,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "R", name: "Reconnaître", color: "var(--step-r)",
+                code: "R", name: "Reformuler", color: "var(--step-r)",
                 options: [
                     { text: "« Je prends note que vos palettes sont prêtes. Cela dit, vous comprenez que pour nous, 48h de retard avec 4 techniciens planifiés, ça représente un impact direct sur notre planning. »", isCorrect: true, reply: "« Je sais bien, on travaille ensemble depuis longtemps et je sais que vos délais sont ultra-serrés sur cette phase. »" },
                     { text: "« C'est toujours la même chose avec vos transporteurs, vous manquez de sérieux. »", isCorrect: false, feedback: "La généralisation et le reproche n'aident pas à résoudre la crise logistique en cours. Restez factuel sur les conséquences pour votre chantier." }
@@ -321,7 +321,7 @@ const baseSituations = [
         ]
     },
     {
-        title: "Fiche 3 : Demande de Travaux Supplémentaires (TS) contestée",
+        title: "Demande de Travaux Supplémentaires (TS) contestée",
         context: "Le chef de chantier présente un devis de TS au Maître d'Ouvrage pour le déplacement d'un chemin de câbles suite à une modification de cloisonnement.",
         objection: "« Pour moi, ce déplacement fait partie de votre devoir de conseil. Je ne signerai pas ce devis, vous devez l'intégrer dans le forfait de base. »",
         steps: [
@@ -333,7 +333,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "R", name: "Reconnaître", color: "var(--step-r)",
+                code: "R", name: "Reformuler", color: "var(--step-r)",
                 options: [
                     { text: "« J'entends que vous cherchiez à optimiser votre budget global et à éviter les surcoûts par rapport à votre enveloppe initiale. »", isCorrect: true, reply: "« Absolument, mes budgets de modification sont extrêmement verrouillés par ma direction sur ce projet. »" },
                     { text: "« Vous savez très bien que le forfait ne couvre pas les modifications de plans des autres corps d'état ! »", isCorrect: false, feedback: "Réponse sur la défensive qui contredit le client de manière frontale au lieu d'accueillir et de valider sa préoccupation budgétaire." }
@@ -356,7 +356,7 @@ const baseSituations = [
         ]
     },
     {
-        title: "Fiche 4 : Client exigeant une modification lourde sans impact planning",
+        title: "Client exigeant une modification lourde sans impact planning",
         context: "En cours de chantier, le Maître d'Œuvre exige le déplacement complet d'un local technique de distribution.",
         objection: "« Il faut impérativement basculer les armoires dans la pièce voisine pour libérer cet espace, et cela ne doit pas décaler la date de mise sous tension prévue dans 15 jours. »",
         steps: [
@@ -368,7 +368,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "R", name: "Reconnaître", color: "var(--step-r)",
+                code: "R", name: "Reformuler", color: "var(--step-r)",
                 options: [
                     { text: "« Je comprends parfaitement la priorité cruciale que représente le respect de la date de mise sous tension du TGBT pour vos engagements. »", isCorrect: true, reply: "« Oui, si le TGBT n'est pas sous tension, tout le reste du bâtiment est à l'arrêt complet. »" },
                     { text: "« Déplacer tout ça va nous demander des heures pas possibles, vous vous rendez pas compte du travail. »", isCorrect: false, feedback: "Se plaindre de la charge de travail décrédibilise votre expertise technique et n'apporte aucune valeur à la négociation." }
