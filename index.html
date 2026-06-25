@@ -213,7 +213,7 @@ h1 {
     <div id="startScreen" class="card">
         <h1>Entraînement à la méthode C.R.A.C.</h1>
         <div style="text-align: center;">
-            <p>Maîtrisez les 4 étapes fondamentales : <strong>Creuser</strong>, <strong>Reformuler</strong>, <strong>Anticiper</strong> et <strong>Contrôler</strong> face aux situations critiques du chantier.</p>
+            <p>Maîtrisez les 4 étapes fondamentales : <strong>Creuser</strong>, <strong>Reformuler</strong>, <strong>Argumenter</strong> et <strong>Contrôler</strong> face aux situations critiques du chantier.</p>
             <button class="start-btn" onclick="startQuiz()">Démarrer le module</button>
         </div>
     </div>
@@ -270,7 +270,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "A", name: "Anticiper", color: "var(--step-a)",
+                code: "A", name: "Argumenter", color: "var(--step-a)",
                 options: [
                     { text: "« Si on trouve un modèle de lunettes plus aéré, ou un traitement anti-buée efficace au magasin, tu t'engages à les porter systématiquement sur ce poste ? »", isCorrect: true, reply: "« Ah bah si j'ai des lunettes confortables où je vois clair, oui, je n'ai aucun problème à les mettre. »" },
                     { text: "« Écoute, fais attention pour cette fois, mais essaie de les remettre dès que tu transpires moins. »", isCorrect: false, feedback: "Tolérer une entorse à la sécurité engage votre responsabilité et affaiblit la portée des règles sur le chantier. Ne négociez pas l'EPI, négociez la solution de rechange." }
@@ -305,7 +305,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "A", name: "Anticiper", color: "var(--step-a)",
+                code: "A", name: "Argumenter", color: "var(--step-a)",
                 options: [
                     { text: "« Si le matériel est prêt, on mandate un transporteur express de notre côté pour récupérer les palettes directement chez vous cet après-midi. Vous acceptez d'en déduire le coût de votre facture ? »", isCorrect: true, reply: "« D'accord, c'est une excellente idée. Je valide la prise en charge de la course express pour préserver notre relation. »" },
                     { text: "« Bon, d'accord... Essayez de faire au plus vite alors, j'espère qu'ils seront là vendredi. »", isCorrect: false, feedback: "Subir le retard sans proposer de solution alternative créative met en péril l'avancement de vos monteurs et le jalon contractuel." }
@@ -340,7 +340,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "A", name: "Anticiper", color: "var(--step-a)",
+                code: "A", name: "Argumenter", color: "var(--step-a)",
                 options: [
                     { text: "« Si on maintient le montant du TS mais qu'on optimise le tracé pour réduire l'impact sur vos prochaines demandes d'adaptations, est-ce qu'on peut valider le principe de cet avenant ? »", isCorrect: true, reply: "« Si vous faites un effort d'ajustement ou d'optimisation sur les métrés pour la prochaine fois, je peux reconsidérer la signature. »" },
                     { text: "« Bon, si vous refusez, je vais demander à mon chargé d'affaires de vous appeler pour faire le forcing. »", isCorrect: false, feedback: "Se défausser sur sa hiérarchie montre un manque de leadership et donne au client l'impression de parler à un exécutant sans autonomie." }
@@ -375,7 +375,7 @@ const baseSituations = [
                 ]
             },
             {
-                code: "A", name: "Anticiper", color: "var(--step-a)",
+                code: "A", name: "Argumenter", color: "var(--step-a)",
                 options: [
                     { text: "« Si on concentre nos efforts pour raccorder le TGBT dans les temps dans le nouveau local, et qu'on bascule le reste de la distribution secondaire en fin de semaine suivante, est-ce que cela sécurise votre jalon ? »", isCorrect: true, reply: "« Oui, ce phasage me convient parfaitement. Cela répond à notre besoin impératif sans bloquer les autres lots. »" },
                     { text: "« On va essayer de tout faire en même temps en croisant les doigts pour que ça passe. »", isCorrect: false, feedback: "Prendre un engagement irréaliste (« on va essayer ») sans organiser de planification alternative détruit la confiance en cas d'échec." }
